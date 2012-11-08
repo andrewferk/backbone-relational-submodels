@@ -1,4 +1,6 @@
-require(["router"], function(Router) {
+require(["app", "router"], function(app, Router) {
+
+  Backbone.Relational.store.addModelScope(app.ns);
 
   // Initialize router
   var router = new Router();
